@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kelurahan Mattiro Deceng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top"><div class="wrap"><span>Kecamatan Lau, Kabupaten Maros · Senin – Jumat, 08.00 –  16.00 WITA</span><span id="tgl"></span></div></div>
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#beranda"><img class="logo" src="images/Maros_Regency_Official_Logo.png" alt="Logo Kabupaten Maros" width="40" height="38">Mattiro Deceng</a>
+ <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+ <nav id="nav"><ul>
+  <li><a href="#beranda">Beranda</a></li>
+  <li class="dd"><button aria-haspopup="true">Profil ▾</button>
+   <ul class="menu"><li><a href="#sambutan">Sambutan Lurah</a></li><li><a href="#visimisi">Visi, Misi &amp; Motto</a></li><li><a href="#statistik">Data &amp; Wilayah</a></li></ul></li>
+  <li><a href="#layanan">Layanan</a></li>
+  <li><a href="#sop">Prosedur</a></li>
+  
+  <li><a href="#galeri">Galeri</a></li>
+  <li><a href="#kontak">Kontak</a></li>
+  <li><button class="mode" id="mode" aria-label="Ganti tema">◐</button></li>
+ </ul></nav>
+</div></header>
+<div class="sarung"></div>
+
+<main id="beranda">
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Kelurahan yang baik dimulai dari warga yang saling mengenal.</h1>
+  <p>Portal resmi Kelurahan Mattiro Deceng, Kecamatan Lau, Kabupaten Maros: informasi pemerintahan, layanan administrasi, berita, dan data wilayah dalam satu tempat.</p>
+  <a class="btn" href="#layanan">Urus surat via WhatsApp</a><a class="btn alt" href="#sop">Lihat prosedur</a>
+ </div>
+ <div class="search">
+  <h3>Cari informasi kelurahan</h3>
+  <input id="q" type="search" placeholder="Contoh: surat pindah, PBB, posyandu" aria-label="Cari informasi">
+  <div class="chips"><a href="#layanan">KTP &amp; KK</a><a href="#layanan">Surat pindah</a><a href="#bantuan">Bantuan sosial</a><a href="#sop">Prosedur</a></div>
+  <p class="msg" id="qmsg"></p>
+ </div>
+</div></div>
+
+<section id="sambutan"><div class="wrap sambutan">
+ <img class="foto" src="images/kantorlurah.jpeg" alt="Kantor Lurah Mattiro Deceng, Kecamatan Lau">
+ <div>
+  <div class="sh"><div><h2>Sambutan Lurah</h2></div></div>
+  <blockquote id="sambutan-teks"></blockquote>
+  <strong id="kades"></strong><br><small>Lurah Mattiro Deceng</small>
+ </div>
+</div></section>
+
+<section id="visimisi" class="vm"><div class="wrap">
+ <div class="sh"><div><h2>Visi, Misi &amp; Motto</h2></div></div>
+ <div class="vm-grid">
+  <div class="vm-card"><h3>Visi</h3><p id="visi"></p></div>
+  <div class="vm-card"><h3>Misi</h3><ol id="misi"></ol></div>
+ </div>
+ <div class="motto"><span>Motto</span><strong id="motto"></strong></div>
+</div></section>
+
+<div class="stats" id="statistik"><section><div class="wrap">
+ <div class="sh"><div><h2>Kelurahan dalam angka</h2></div></div>
+ <div class="grid g4">
+  <div class="stat"><b id="st-pop" data-n="1552">0</b><span>Jumlah jiwa</span></div>
+  <div class="stat"><b id="st-ling" data-n="4">0</b><span>Lingkungan</span></div>
+  <div class="stat"><b id="st-pos" data-n="2">0</b><span>Posyandu</span></div>
+  <div class="stat"><b id="st-pkd" data-n="1">0</b><span>Poskesdes</span></div>
+  <div class="stat"><b id="st-sek" data-n="0">0</b><span>Sekolah</span></div>
+ </div>
+ <div class="wil">
+  <div><h3>Lingkungan</h3><div class="chips" id="ling-list"></div></div>
+  <div><h3>Posyandu</h3><div class="chips" id="pos-list"></div></div>
+  <div><h3>Poskesdes</h3><div class="chips" id="pkd-list"></div></div>
+ </div>
+ <div class="sekolah"><h3>Sekolah</h3><p class="sek-total" id="sek-total"></p><div class="grid g3" id="sek-list"></div></div>
+</div></section></div>
+
+<section id="layanan"><div class="wrap">
+ <div class="sh"><div><h2>Layanan administrasi</h2><p>Pilih layanan, kirim data lewat WhatsApp, lalu ambil surat di kantor kelurahan.</p></div></div>
+ <div class="grid g4" id="svc"></div>
+ <div id="bantuan" style="margin-top:44px">
+  <div class="sh"><div><h2 style="font-size:26px">Layanan bantuan</h2><p>Tanyakan syarat dan pendaftaran ke kantor kelurahan.</p></div></div>
+  <div class="grid g3" id="bantuan-list"></div>
+ </div>
+</div></section>
+
+<section id="sop" class="sec-alt"><div class="wrap">
+ <div class="sh"><div><h2>Standar operasional prosedur</h2><p>Waktu dan biaya pelayanan. Persyaratan lengkap tiap layanan ada pada papan SOP di kantor kelurahan.</p></div></div>
+ <div class="grid g3" id="sop-list"></div>
+</div></section>
+
+
+
+<section id="agenda" class="sec-alt"><div class="wrap two">
+ <div>
+  <div class="sh"><div><h2>Agenda kelurahan</h2></div></div>
+  <ul class="agenda" id="agenda-list"></ul>
+ </div>
+ <div>
+  <div class="sh"><div><h2>Papan informasi</h2></div></div>
+  <div class="card"><p style="margin:0 0 14px;color:var(--mute)">Visi misi dan SOP pelayanan juga dipasang di papan informasi kantor kelurahan.</p><a class="btn" href="#sop">Lihat prosedur</a></div>
+ </div>
+</div></section>
+
+<section id="galeri"><div class="wrap">
+ <div class="sh"><div><h2>Galeri</h2><p>Arsip kegiatan dan suasana Kelurahan Mattiro Deceng. Geser foto untuk melihat koleksi lainnya.</p></div></div>
+ <div class="gallery-slider" aria-label="Galeri foto">
+  <button class="gallery-arrow prev" id="gal-prev" type="button" aria-label="Foto sebelumnya">‹</button>
+  <div class="gallery-window"><div class="gal" id="gal"></div></div>
+  <button class="gallery-arrow next" id="gal-next" type="button" aria-label="Foto berikutnya">›</button>
+ </div>
+ <div class="gallery-indicator" id="gal-indicator" aria-live="polite">1 / 10</div>
+</div></section>
+
+<section id="kontak" class="sec-alt"><div class="wrap two">
+ <div>
+  <div class="sh"><div><h2>Hubungi kami</h2></div></div>
+  <form id="f" novalidate>
+   <input name="nama" placeholder="Nama lengkap" aria-label="Nama lengkap">
+   <input name="hp" placeholder="Nomor HP / WhatsApp" aria-label="Nomor HP">
+   <textarea name="pesan" rows="4" placeholder="Tulis pesan atau pengaduan" aria-label="Pesan"></textarea>
+   <button class="btn" type="submit">Kirim via WhatsApp</button>
+   <p class="msg" id="fmsg" role="status"></p>
+  </form>
+ </div>
+ <div class="card" style="align-self:start">
+  <h3 style="font-size:20px;margin-bottom:10px">Kantor Kelurahan Mattiro Deceng</h3>
+  <p id="kontak-info" style="margin:0;color:var(--mute)"></p>
+ </div>
+</div></section>
+</main>
+
+<div class="sarung"></div>
+<footer><div class="wrap">
+ <div class="grid">
+  <div><h3>Mattiro Deceng</h3><p>Portal resmi Kelurahan Mattiro Deceng, Kecamatan Lau, Kabupaten Maros, untuk informasi dan layanan warga.</p></div>
+  <div><h3>Tautan</h3><ul><li><a href="#layanan">Layanan</a></li><li><a href="#sop">Prosedur</a></li><li><a href="#galeri">Galeri</a></li></ul></div>
+  <div><h3>Jam layanan</h3><p>Senin–Kamis 08.00–15.30<br>Jumat 08.00–11.30</p></div>
+ </div>
+ <div class="copy">© <span id="yr"></span> Pemerintah Kelurahan Mattiro Deceng. <span class="creator-credit">Dikembangkan oleh KKN REGULER UNM ANGKATAN LV</span></div>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><figure><img id="lbimg" alt=""><figcaption id="lbt"></figcaption></figure></div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
